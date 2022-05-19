@@ -1,5 +1,6 @@
 package enums.test;
 import java.lang.Enum;
+import enums.*;
 public class MainEnums
 {
     public static void main(String[] args) {

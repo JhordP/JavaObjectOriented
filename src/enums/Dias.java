@@ -1,4 +1,4 @@
-//package enums;
+package enums;
 
 public enum Dias { //Se utiliza la keyword enum en vez de class
     /*Todos los elementos agregados a un enum son por defecto public, static y final
