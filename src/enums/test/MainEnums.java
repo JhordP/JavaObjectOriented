@@ -1,6 +1,6 @@
 package enums.test;
 import java.lang.Enum;
-public class Main
+public class MainEnums
 {
     public static void main(String[] args) {
         
@@ -16,7 +16,12 @@ public class Main
         System.out.println("Paises en "+Continentes.AFRICA+": "+Continentes.AFRICA.getPaises());
         
         //Enum enume = new Enum();
-        System.out.println(Continentes.AFRICA.ordinal()); //Intento de traer todos los elementos del enum fallido.
+        //System.out.println(Continentes.AFRICA.ordinal()); //Intento de traer todos los elementos del enum fallido.
+        //La unica manera de traer todos los valores del enum, es usando uno de los enum .-. wtf
+        Object[] continentes = Continentes.AFRICA.getDeclaringClass().getEnumConstants();
+        for (Object cont : continentes ) {
+            System.out.println("Continentes: "+cont);
+        } 
     }
     
     private static void indicarDiaSemana(Dias dia){
