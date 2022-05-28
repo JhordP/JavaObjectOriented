@@ -1,5 +1,4 @@
 package enums.test;
-import java.lang.Enum;
 import enums.*;
 public class MainEnums
 {
