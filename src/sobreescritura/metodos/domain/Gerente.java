@@ -9,5 +9,9 @@ public class Gerente extends Empleado {
         this.departamento = departamento;
     }
 
-    
+    @Override //Se sobreescribe el metodo desde la clase padre. Lo correcto es usar la notación Override.
+    public String obtenerDetalles() {
+        //Se puede utilizar supero para utilizar lo que ya retorna la clase padre y entonces agregar la sobreescritura.
+        return super.obtenerDetalles() + ", " + this.departamento;
+    }
 }
