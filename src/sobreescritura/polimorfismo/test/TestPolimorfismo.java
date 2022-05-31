@@ -1,12 +1,12 @@
 package sobreescritura.polimorfismo.test;
-import sobreescritura.metodos.domain.Empleado;
+import sobreescritura.metodos.domain.*;
 
-public class Main
+public class TestPolimorfismo
 {
 	public static void main(String[] args) {
 		Empleado emp1 = new Empleado("Carlos", 24642.24);
 	    //System.out.println(emp1.obtenerDetalles());
-	    emp1.nombre = "Jose";
+	    emp1.setNombre("Jose");
 	    imprimir(emp1); //Al utilizar el objeto de Empleado, utiliza el metodo de la clase padre.
 	    
 	    Gerente ger1 = new Gerente("Karla", 35483.16, "Contabilidad");
