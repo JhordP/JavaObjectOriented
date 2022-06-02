@@ -1,6 +1,22 @@
 package instanceof.test;
 import instanceof.domain.*;
 
+//***A TENER EN CUENTA EN CUANTO A COMPATIBILIDAD CON INSTANCIAS Y REFERENCIAS DE CLASES***//
+/**
+1.Las clases hijas son al mismo tiempo, tipo hija y tipo padre/s. En este caso un objeto tipo Gerente es tambien tipo Empleado.
+
+2.Al ser del tipo del padre al mismo tiempo, una referencia o instancia (la parte derecha de una asignacion de objeto) puede ser considerada
+  por un argumento como un elemento del tipo padre.
+  
+3.Un objeto del tipo padre no es al mismo tiempo un objeto de clase hija(Ya que si esta clase padre tiene varias clases hijas, eso significase
+  que es al mismo tiempo su propio tipo y el de todas sus clases hijas. Por tanto, una clase padre NO es una instancia de ninguna de sus hijas,
+  sino solamente su tipo y el de su padre Object o cualquier otra clase padre que tenga de por medio.
+  
+4. Debido al punto 3, las clases padres no pueden ser tratadas como ninguna de sus clases hijas en ninguna parte del codigo(declaraciones, metodos,
+argumentos, etc.) por lo que un objeto del tipo padre no se puede declarar como una instancia de alguna de sus hijas ya que nuevamente, una clase
+padre no es del tipo de su hija/s. Asi que, una clase padre no tiene acceso a los atributos, metodos, etc. de ninguna de sus hijas.
+*/
+
 public class TestInstanceOf {
     public static void main (String[] args) {
        	Empleado emp1 = new Empleado("Carlos", 24642.24);
