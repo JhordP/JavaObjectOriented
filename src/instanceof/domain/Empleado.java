@@ -1,4 +1,4 @@
-package sobreescritura.metodos.domain;
+package instance.domain;
 
 public class Empleado {
     protected String nombre;
