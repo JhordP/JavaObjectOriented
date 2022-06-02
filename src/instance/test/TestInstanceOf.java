@@ -1,5 +1,5 @@
-package instanceof.test;
-import instanceof.domain.*;
+package instance.test;
+import instance.domain.*;
 
 //***A TENER EN CUENTA EN CUANTO A COMPATIBILIDAD CON INSTANCIAS Y REFERENCIAS DE CLASES***//
 /**
