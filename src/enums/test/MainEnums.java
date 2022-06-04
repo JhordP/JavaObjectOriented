@@ -32,6 +32,14 @@ public class MainEnums
                 break;
             case MIERCOLES: System.out.println("Tercer dia de la semana.");
                 break;
+            case JUEVES: System.out.println("Cuarto dia de la semana.");
+                break;
+            case VIERNES: System.out.println("Quinto dia de la semana.");
+                break;
+            case SABADO: System.out.println("Sexto dia de la semana.");
+                break;
+            case DOMINGO: System.out.println("Ultimo dia de la semana.");
+                break;
         }
     }
 }
