@@ -1,3 +1,5 @@
+package casting.domain;
+
 public class Escritor extends Empleado {
     final TipoEscritura tipo;
     
@@ -9,5 +11,14 @@ public class Escritor extends Empleado {
     @Override
     public String obtenerDetalles() {
         return super.obtenerDetalles() + ", "+tipo.getDescripcion();
+    }
+
+    public TipoEscritura getTipo() {
+        return this.tipo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", "+ this.tipo;
     }
 }

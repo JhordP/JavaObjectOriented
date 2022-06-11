@@ -1,3 +1,5 @@
+package casting.domain;
+
 public class Empleado {
     protected String nombre;
     protected double sueldo;
@@ -17,5 +19,16 @@ public class Empleado {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public double getSueldo(){
+        return this.sueldo;
+    }
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
     
+    @Override
+    public String toString() {
+        return this.getNombre()+", "+this.getSueldo();
+    }
 }

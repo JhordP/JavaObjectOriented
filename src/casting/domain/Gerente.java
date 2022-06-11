@@ -1,3 +1,5 @@
+package casting.domain;
+
 public class Gerente extends Empleado {
     
     private String departamento;
