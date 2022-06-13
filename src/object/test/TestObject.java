@@ -1,6 +1,7 @@
 package object.test;
+import object.domain.Empleado;
 
-public class Main {
+public class TestObject {
     public static void main(String[] args) {
         Empleado emp1 = new Empleado("Juan", 5000.00);
         Empleado emp2 = new Empleado("Juan", 5000.00);
