@@ -3,6 +3,13 @@ package javabeans.domain;
 import java.io.Serializable;
 
 public class Persona implements Serializable {
+    //Para que una clase sea una JavaBean, debe tener lo siguiente:
+    /*
+    1. Cada atributo debe ser privado
+    2. Debe tener un constructor vacio
+    3. Debe tener Getters and Setters
+    */
+
     private String nombre;
     private String apellido;
 
