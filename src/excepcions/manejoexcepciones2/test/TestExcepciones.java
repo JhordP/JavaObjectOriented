@@ -1,4 +1,4 @@
-package excepcions.manejoexcepciones1.test;
+package excepcions.manejoexcepciones2.test;
 
 public class TestExcepciones {
     public static void main(String[] args) {
