@@ -1,11 +1,11 @@
 package excepcions.manejoexcepciones2.test;
 
-import excepcions.manejoexcepciones1.excepciones.OperacionExcepcion;
+import excepcions.manejoexcepciones2.excepciones.OperacionExcepcion;
 
 public class Aritmetica {
 
-    /*Indicar en la firma del metodo la excepcion que puede arrojar*/
-    public static int division(int numerador, int denominador) throws OperacionExcepcion
+    /*No es necesario indicar en la firma del metodo la excepcion que puede arrojar*/
+    public static int division(int numerador, int denominador)
     {
         if (denominador==0) {
             throw new OperacionExcepcion("Division entre cero."); //Si se cumple la condicion, arroja una excepcion del tipo creado.
