@@ -1,6 +1,6 @@
-package colecciones.test
+package colecciones.test;
 import java.util.*;
-
+//Nota: Los warnings en esta clase son debido a que no estan implementando un tipo <T> o Generico.
 public class TestColecciones{
     
     public static void main() {

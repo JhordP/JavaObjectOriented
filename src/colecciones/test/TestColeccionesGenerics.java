@@ -36,7 +36,7 @@ public class TestColeccionesGenerics{
             En los Set los elementos duplicados se sobreescriben
         */
         
-        Map<Integer, String> miMapa = new HashMap();
+        Map<Integer, String> miMapa = new HashMap<>();
         System.out.println("\nMap:");
         
         //Se agrega una "key" y un registro , ambos de cualquier tipo de dato Object.
@@ -52,12 +52,12 @@ public class TestColeccionesGenerics{
         
         //System.out.println("\nTrayendo todos los elementos\n");
         //Para traer todas las llaves:
-        Set mapa = miMapa.keySet(); //Devuelve un set por lo que el orden varia. No devuelve los valores sino las Key.
-        //mapa.forEach(elem -> { System.out.println(elem); });
+        Set<Integer> mapa = miMapa.keySet(); //Devuelve un set por lo que el orden varia. No devuelve los valores sino las Key.
+        mapa.forEach(elem -> { System.out.println(elem); });
         
         //Para traer todas los valores:
-        Collection lista = miMapa.values();
-        //lista.forEach(elem -> { System.out.println(elem); });
+        Collection<String> lista = miMapa.values();
+        lista.forEach(elem -> { System.out.println(elem); });
         
         /*Diferencias-->
             List: Guardan el orden o index en el que fueron agregados
