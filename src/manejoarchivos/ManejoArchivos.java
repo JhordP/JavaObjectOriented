@@ -16,4 +16,17 @@ public class ManejoArchivos {
             e.printStackTrace(System.out);
         }
     }
+
+    public static void escribirArchivo(String nombreArchivo, String contenido) {
+        File archivo = new File(nombreArchivo);
+        try {
+            PrintWriter salida = new PrintWriter(archivo);
+            salida.println(contenido);
+            salida.close();
+            System.out.println("Se ha escrito en el archivo.");
+        } catch (Exception e) {
+            //TODO: handle exception
+            System.out.println(e.getStackTrace());
+        }
+    }
 }

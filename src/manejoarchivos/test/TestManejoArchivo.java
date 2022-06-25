@@ -1,9 +1,10 @@
 package manejoarchivos.test;
-import static manejoarchivos.ManejoArchivos.crearArchivo;
+import static manejoarchivos.ManejoArchivos.*;
 
 public class TestManejoArchivo {
     public static void main(String[] args) {
         var nombreArchivo = "./src/manejoarchivos/prueba.txt";
-        crearArchivo(nombreArchivo);
+        //crearArchivo(nombreArchivo);
+        escribirArchivo(nombreArchivo, "Hola Mundo.");
     }
 }
