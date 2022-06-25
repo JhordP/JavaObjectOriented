@@ -6,5 +6,6 @@ public class TestManejoArchivo {
         var nombreArchivo = "./src/manejoarchivos/prueba.txt";
         //crearArchivo(nombreArchivo);
         escribirArchivo(nombreArchivo, "Hola Mundo.");
+        agregarInfo(nombreArchivo, "Adios.");
     }
 }
