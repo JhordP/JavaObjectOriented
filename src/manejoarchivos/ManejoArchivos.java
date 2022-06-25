@@ -1,7 +1,9 @@
 package manejoarchivos;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
@@ -46,5 +48,25 @@ public class ManejoArchivos {
             //TODO: handle exception
             System.out.println(e.getStackTrace());
         }
+    }
+
+    //Lee el archivo
+    public static void leerArchivo(String nombreArchivo) {
+        var archivo = new File(nombreArchivo);
+        try {
+            var entrada = new BufferedReader(new FileReader(archivo));
+            var lectura = entrada.readLine();
+            while (lectura != null) {
+                System.out.println(lectura);
+                lectura = entrada.readLine();  
+            }
+            entrada.close();
+        } catch (Exception e) {
+            //TODO: handle exception
+            e.printStackTrace(System.out);
+        }finally{
+            
+        }
+        
     }
 }

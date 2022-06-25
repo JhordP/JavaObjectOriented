@@ -7,5 +7,6 @@ public class TestManejoArchivo {
         //crearArchivo(nombreArchivo);
         escribirArchivo(nombreArchivo, "Hola Mundo.");
         agregarInfo(nombreArchivo, "Adios.");
+        leerArchivo(nombreArchivo);
     }
 }
